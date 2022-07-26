@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ex0002</title>
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo"><span wb-atrb>.teceiro.ultimo</span></div>
+
+    <script>
+        document.querySelector('#primeiro').classList.add('destaque')
+
+        const selecionar = seletor => document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+
+        const deselecionar = seletor => document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+
+        selecionar('div')
+
+        deselecionar('*')
+        selecionar('.terceiro.ultimo')
+
+        deselecionar('*')
+        selecionar(':not(#primeiro)')
+
+        deselecionar('*')
+        selecionar(':nth-child(1)')
+
+        deselecionar('*')
+        selecionar('span:nth-of-type(1)')
+
+        deselecionar('*')
+        selecionar('[wb-atrb]')
+    </script>
+</body>
+</html>

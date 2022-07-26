@@ -1,0 +1,30 @@
+body{
+    background-color: #13232E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    border: 5px solid white;
+    background-color: #CC3043;
+    color: white;
+    padding: 20px 50px;
+    margin: 10px;
+}
+
+#primeiro{
+    background-color: #A17A2E;
+}
+
+.terceiro{
+    background-color: #3D898B;
+}
+
+.exercicio .destaque{
+    color: greenyellow;
+    border: solid 5px greenyellow;
+    font-weight: bold;
+}
